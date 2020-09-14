@@ -1,0 +1,328 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*--buttons--*/
+.btn{
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+}
+
+.btn-top{
+    width: 290px;
+    height: 48px;
+    margin-top: 35px;
+    margin-bottom: 60px;
+}
+
+.btn-header{
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 50px;
+    width: 140px;
+    height: 40px;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+}
+
+.btn-bottom{
+    width: 275px;
+    height: 43px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/*--text formatting--*/
+h1{
+    font-size: 30px;
+}
+
+
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+main p{
+    color: hsl(208, 11%, 55%);
+}
+
+/*---header section---*/
+header{
+    background-image: url(images/bg-hero-desktop.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:  hsl(193, 100%, 96%);
+    padding-top: 30px;
+}
+
+.header{
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.header-illustration{
+    flex-shrink: 1.5;
+    padding-right: 60px;
+}
+
+header section .img{
+    padding-right: 40px
+}
+
+header section{
+    background-color: transparent;
+    padding-left: 60px;
+    border: none;
+    box-shadow: none;
+}
+
+
+
+/*--main section--*/
+main{
+    width: 92%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 200px;
+}  
+
+section{
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 40px 20px;
+    padding-left: 80px;
+    margin-top: 35px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+    color: hsl(0, 0%, 0%);
+    display: flex;
+    align-items: center;
+}
+
+.right{
+    flex-direction: row-reverse;
+}
+
+.right .img{
+    padding-left: 100px;
+}
+
+.left .img{
+    padding-right: 50px;
+}
+
+
+.illustration-img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*--footer section--*/
+article{
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    padding: 10px 5px;
+    position: absolute;
+    top: -10%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    color: hsl(0, 0%, 0%);
+    text-align: center;
+}
+
+footer{
+    margin-top: 10vh;
+    padding: 20px;
+    padding-top: 8.5em;
+    padding-left: 80px;
+    padding-bottom: 70px;
+    background: hsl(192, 100%, 9%);
+    color: white;
+    position: relative;
+}
+
+.footer{
+    display: flex;
+}
+
+.footer-logo{
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.icon{
+    margin-right: 20px;
+}
+
+.contact{
+    width: 25%;
+}
+
+.contact li{
+    display: flex;
+}
+
+.details{
+    width: 25%;
+    padding-left: 120px;
+}
+
+.social{
+    text-align: center;
+    margin-bottom: 20px;
+    width: 25%;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid white;
+    text-align: center;
+    margin-right: 10px;
+    
+  }
+
+.copyright{
+    text-align: right;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+
+
+
+
+@media screen and (max-width: 640px){
+body{
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.header-logo, .footer-logo{
+    width: 120px;
+}
+
+h1{
+    font-size: 28px;
+}
+
+h2{
+    margin-top: 40px;
+}
+
+.btn{
+    width: 230px;
+    height: 40px;
+}
+
+/*header*/
+header{
+    background-image: url(images/bg-hero-mobile.svg);
+}
+
+.header{
+    align-items: center;
+    margin: 0 20px;
+}
+
+.btn-header{
+    width: 100px;
+    height: 30px;
+}
+
+.header-illustration{
+    padding-right: 0px;
+}
+
+header section .img{
+    padding-right: 0px
+}
+
+header section{
+    padding: 30px;
+}
+
+/*main*/
+section, .right{
+    flex-direction: column;
+    padding: 20px;
+}
+
+.right .img{
+    padding-left: 0px;
+}
+
+.left .img{
+    padding-right: 0px;
+}
+
+/*footer*/
+article{
+    width: 92%;
+}
+
+article h2{
+    font-size: 20px;
+}
+
+footer{
+    text-align: left;
+    padding-left: 20px
+}
+
+.footer{
+    flex-direction: column;
+}
+
+.contact{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.details{
+    width: 100%;
+    padding-left: 0;
+}
+
+.social{
+    text-align: center;
+    width: 100%;
+}
+
+.copyright{
+    text-align:center;
+    margin: auto
+}
+
+}
